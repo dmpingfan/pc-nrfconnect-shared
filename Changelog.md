@@ -1,3 +1,8 @@
+## Unreleased
+### Changed
+- Create and connect store in App component, so this does not need to be done
+  in each app (unless they want to do it themselves).
+
 ## Version 4.3
 ### Added
 - Ease configuration of git hooks #40. If you want to automatically run the `lint` and `test` scripts before pushing changes, add a file `.huskyrc.json` to your project with this content:
