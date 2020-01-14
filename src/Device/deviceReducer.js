@@ -86,4 +86,6 @@ export default (state = initialState, action) => {
     }
 };
 
-export const deviceIsSelected = state => state.device.selectedSerialNumber != null;
+export const deviceIsSelectedSelector = (
+    state => state.device && state.device.selectedSerialNumber != null
+);
