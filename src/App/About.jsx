@@ -35,37 +35,5 @@
  */
 
 import React from 'react';
-import { bool, elementType, string } from 'prop-types';
-import { useDispatch } from 'react-redux';
-import Button from 'react-bootstrap/Button';
 
-import { setMainComponent } from '../appLayout';
-
-import '../../../resources/css/nav-menu-item.scss';
-
-const NavMenuItem = ({
-    component, isFirst, isSelected, label,
-}) => {
-    const dispatch = useDispatch();
-
-    return (
-        <Button
-            variant="link"
-            active={false}
-            className={`core19-nav-menu-item ${isSelected ? 'selected' : ''} ${isFirst ? 'first' : ''}`}
-            onClick={() => dispatch(setMainComponent(component))}
-            type="button"
-        >
-            {label}
-        </Button>
-    );
-};
-
-NavMenuItem.propTypes = {
-    component: elementType.isRequired,
-    isFirst: bool.isRequired,
-    isSelected: bool.isRequired,
-    label: string.isRequired,
-};
-
-export default NavMenuItem;
+export default () => <div>FIXME: About!</div>;

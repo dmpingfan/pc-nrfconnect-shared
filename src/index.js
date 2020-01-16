@@ -40,7 +40,6 @@ export { ErrorDialogActions };
 
 export { default as App } from './App/App';
 export { default as Logo } from './App/Logo';
-export { default as NavBar } from './App/NavBar';
 export { default as DeviceSelector } from './Device/DeviceSelector';
 export { default as ConfirmationDialog } from './Dialog/ConfirmationDialog';
 export { default as Spinner } from './Dialog/Spinner';
@@ -48,7 +47,6 @@ export { default as Spinner } from './Dialog/Spinner';
 export { default as ErrorDialog } from './ErrorDialog/ErrorDialog';
 
 export { default as errorDialogReducer } from './ErrorDialog/errorDialogReducer';
-export { default as coreReducers } from './coreReducers';
 export { default as logger } from './logging';
 
 export {
